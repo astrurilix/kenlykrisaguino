@@ -31,3 +31,7 @@
 .font-adam-light{
     font-family: adam-light;
 }
+
+.text-right{
+    text-align: right;
+}
