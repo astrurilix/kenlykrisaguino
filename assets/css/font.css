@@ -1,0 +1,33 @@
+@font-face {
+    font-family: montserrat;
+    src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: adam-bold;
+    src: url(../font/Adam-Bold.ttf);
+}
+@font-face {
+    font-family: adam-medium;
+    src: url(../font/Adam-Medium.ttf);
+}
+@font-face {
+    font-family: adam-light;
+    src: url(../font/Adam-Light.ttf);
+}
+
+.font-montserrat{
+    font-family: montserrat;
+}
+
+.font-adam-bold{
+    font-family: adam-bold;
+}
+
+.font-adam-medium{
+    font-family: adam-medium;
+}
+
+.font-adam-light{
+    font-family: adam-light;
+}
