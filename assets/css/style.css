@@ -8,6 +8,11 @@ FULL STACK DEVELOPER
     --primary-color-dark: hsl(46, 100%, 45%);
     --white: #e5e5e5;
     --gray: #979797;
+
+    --landing-nav: 15vw;
+    --skills-nav: 30vw;
+    --projects-nav: 73.5vw;
+    --socials-nav: 86.5vw;
 }
 
 a{
@@ -21,6 +26,17 @@ a{
     font-family: montserrat;
     color: var(--white);
     scroll-behavior: smooth;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    width: 80vw;
+    position: fixed;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--gray);
 }
 
 ::-webkit-scrollbar{
@@ -81,4 +97,22 @@ section{
 .active-link{
     transform: scale(1.1);
     color: var(--primary-color);
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover{
+    color: var(--primary-color-dark);
+    transform: translateY(-1px);
+    transition: .3s ease;
+}
+
+#dot-navbar{
+    display: block;
+    position: fixed;
+    top: 63px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color-dark);
+    border-radius: 50%;
+    transition: .5s ease;
 }

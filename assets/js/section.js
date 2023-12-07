@@ -1,45 +1,53 @@
 $(document).ready(function() {
-
-  const sentences = [
-    "FULLSTACK DEVELOPER",
-    "BACKEND DEVELOPER",
-    "WEB DEVELOPER"
-  ];
-
-  let currentSentenceIndex = 0;
-  let currentWordIndex = 0;
-  let currentWord = '';
-  let isDeleting = false;
+    // Cache jQuery selections
+    var navLinks = $('nav a');
+    var dotNavbar = $('#dot-navbar');
   
-    function isSectionOnScreen(sectionId) {
-      var section = $(sectionId);
-      var windowHeight = $(window).height();
-      var scrollTop = $(window).scrollTop();
-      var sectionOffset = section.offset().top;
-      var sectionHeight = section.outerHeight();
-      var threshold = 0.5; // 50%
-      return (
-        scrollTop < sectionOffset + sectionHeight * threshold &&
-        scrollTop + windowHeight > sectionOffset
-      );
+    // Function to update the dot position
+    function updateDotPosition(link) {
+      var linkPosition = link.position().left + link.width() / 2;
+      dotNavbar.css('transform', 'translateX(' + linkPosition + 'px)');
     }
-
-    function updateActiveLink() {
-      $("a.font-adam-bold").removeClass("active-link");
-
-      $("section").each(function() {
-        var sectionId = "#" + $(this).attr("id");
-        var linkSelector = 'a[href="' + sectionId + '"]';
-
-        if (isSectionOnScreen(sectionId)) {
-          $(linkSelector).addClass("active-link");
+  
+    // Function to handle scroll and resize events
+    function handleScrollAndResize() {
+      // Get the current scroll position
+      var scrollPosition = $(window).scrollTop();
+  
+      // Flag to determine if the active section is found
+      var activeSectionFound = false;
+  
+      // Loop through each section
+      $('section').each(function() {
+        if (activeSectionFound) return; // Skip the loop if the active section is found
+  
+        var sectionTop = $(this).offset().top;
+        var sectionHeight = $(this).outerHeight();
+  
+        // Check if the user has scrolled to at least 51% of the section
+        if (scrollPosition >= sectionTop && scrollPosition <= sectionTop + sectionHeight * 0.49) {
+          // Remove 'active' class from all navigation links
+          navLinks.removeClass('active-link');
+  
+          // Add 'active' class to the corresponding navigation link
+          var activeLink = navLinks.filter('[href="#' + $(this).attr('id') + '"]');
+          activeLink.addClass('active-link');
+  
+          // Update the dot position
+          updateDotPosition(activeLink);
+  
+          // Set the flag to true since the active section is found
+          activeSectionFound = true;
         }
       });
     }
-
-    updateActiveLink();
-
-    $(window).on("scroll", function() {
-      updateActiveLink();
+  
+    // Call the function on page load
+    handleScrollAndResize();
+  
+    // Event listener for scroll and resize events
+    $(window).on('scroll resize', function() {
+      handleScrollAndResize();
     });
   });
+  
