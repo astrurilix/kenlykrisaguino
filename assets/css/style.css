@@ -91,7 +91,7 @@ nav a:hover{
     z-index: 55;
 }
 
-.container {
+main {
     display: flex;
     align-items: center;
     justify-content: space-between;
