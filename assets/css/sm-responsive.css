@@ -1,3 +1,24 @@
 @media (max-width: 575.98px) {
+
+    #landing .section-grid{
+        grid-template-areas: "text text text text" "text text text text" "text text text text" "text text text text"!important;
+    }
     
+    .landing-title {
+        font-size: 2rem !important;
+    }
+
+    .landing-img{
+        display: none !important;
+        position: relative;
+    }
+
+    .text-sm-center{
+        text-align: center !important; 
+    }
+
+    p.about-content{
+        margin-top: 1rem !important;
+        width: 80dvw !important;
+    }
 }

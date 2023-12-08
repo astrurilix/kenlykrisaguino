@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenly Krisaguino</title>
     <!-- START STYLING PAGE -->
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/md-responsive.css">
+    <link rel="stylesheet" href="/assets/css/sm-responsive.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/font.css">
     <!-- // START STYLING PAGE -->
-    <link rel="shortcut icon" href="assets/img/logo/logo_dark.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/logo/dark.svg" type="image/x-icon">
 </head>
+
 <body>
     <!-- START PAGE CONTENT -->
     <nav>
@@ -21,41 +26,63 @@
     </nav>
     <hr>
     <span id="dot-navbar"></span>
-    <section id="landing">
-        <div class="section-grid">
-            <div class="landing-title">
-                <h4 class="text-right">HI, I AM</h4>
-                <h1 class="font-adam-bold text-right">KENLY<br>KRISAGUINO</h1>
-                <h6 id="landing-skills" class="text-right">FULLSTACK DEVELOPER</h6>
+    <div class="container y-scroll-snapping">
+        <section id="landing">
+            <div class="section-grid">
+                <div class="landing-title">
+                    <h4 class="text-right text-sm-center">HI, I AM</h4>
+                    <h1 class="font-adam-bold text-right text-sm-center">KENLY<br>KRISAGUINO</h1>
+                    <h6 id="landing-skills" class="text-right text-sm-center">FULLSTACK DEVELOPER</h6>
+                </div>
+                <div class="landing-img">
+                    <img src="assets/img/content/kenly.webp" alt="Kenly Krisaguino" id="landing-img">
+                </div>
             </div>
-            <div class="landing-img">
-                <img src="" alt="Kenly Krisaguino">
+        </section>
+        <section id="skills">
+            <div class="section-grid">
+                <div class="about text-center">
+                    <h1 class="sub-title font-adam-bold">ABOUT ME</h1>
+                    <p class="about-content">
+                        A 5th Semester Computer Science student dives into IT, mastering RDBMS, Fullstack Development,
+                        and Laravel, painting a future where code meets creativity.
+                    </p>
+                </div>
+                <div class="skills">
+                    <h1 class="sub-title font-adam-bold text-center">MY SKILLS</h1>
+                    <div class="skills-content">
+
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <section id="skills">
-        <div class="section-grid">
+        </section>
+        <section id="projects">
+            <div class="section-grid">
+                <h1 class="projects-title font-adam-bold">PROJECTS</h1>
+                <div class="projects-content">
 
-        </div>
-    </section>
-    <section id="projects">
-        <div class="section-grid">
+                </div>
+            </div>
+        </section>
+        <section id="socials">
+            <div class="section-grid">
+                <h1 class="projects-title font-adam-bold">MY SOCIALS</h1>
+                <div class="projects-content">
 
-        </div>
-    </section>
-    <section id="socials">
-        <div class="section-grid">
-
-        </div>
-    </section>
+                </div>
+            </div>
+        </section>
+    </div>
     <!-- / START PAGE CONTENT -->
 
     <!-- START SCRIPT PAGE -->
     <script src="/assets/js/jquery-3.7.1.min.js"></script>
     <script src="/assets/js/section.js"></script>
+    <script src="/assets/js/landing.js"></script>
     <script>
-        
+
     </script>
     <!-- / START SCRIPT PAGE -->
 </body>
+
 </html>

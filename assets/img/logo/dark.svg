@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a09474;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #726542;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-2" points="94 342.97 94 488 24 488 24 272.97 94 342.97"/>
+  <polygon class="cls-2" points="225.33 474.3 225.33 488 155.33 488 155.33 404.3 225.33 474.3"/>
+  <polygon class="cls-2" points="94 24 94 169.03 24 239.03 24 24 94 24"/>
+  <polygon class="cls-2" points="225.33 24 225.33 37.7 155.33 107.7 155.33 24 225.33 24"/>
+  <g>
+    <polygon class="cls-1" points="488 488 407.34 488 175.34 256 256 256 488 488"/>
+    <polygon class="cls-1" points="336.66 488 256 488 24 256 104.66 256 336.66 488"/>
+    <polygon class="cls-1" points="336.66 24 104.66 256 24 256 256 24 336.66 24"/>
+    <polygon class="cls-1" points="488 24 256 256 175.34 256 407.34 24 488 24"/>
+    <polygon class="cls-1" points="488 256 488 261 483 256 488 256"/>
+    <polygon class="cls-1" points="488 331.67 488 412.33 331.67 256 412.33 256 488 331.67"/>
+    <polygon class="cls-1" points="488 99.67 488 180.33 412.33 256 331.67 256 488 99.67"/>
+    <polygon class="cls-1" points="488 251 488 256 483 256 488 251"/>
+  </g>
+</svg>

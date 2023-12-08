@@ -37,6 +37,7 @@ hr{
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--gray);
+    z-index: 55;
 }
 
 ::-webkit-scrollbar{
@@ -49,6 +50,7 @@ body {
     background-repeat: repeat;
     min-height: 100vh;
     background-size: contain;
+    scroll-snap-type: y mandatory;
 }
 
 nav{
@@ -62,36 +64,7 @@ nav{
     position: fixed;
     width: 100vw;
     top: 0;
-}
-
-section{
-    box-sizing: border-box;
-    height: 100vh;
-    border: 1px solid red;
-    padding-top: 80px;
-}
-
-.section-grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    height: 100%;
-}
-
-#landing .section-grid{
-    grid-template-areas: "text text picture picture" "text text picture picture" "text text picture picture" "text text picture picture";
-    justify-items: center;
-    align-items: center;
-}
-
-.landing-title{
-    grid-area: text;
-    width: 100%;
-    font-size: 2.25rem;
-}
-.landing-img{
-    grid-area: picture;
-    width: 100%;
+    z-index: 50;
 }
 
 .active-link{
@@ -115,4 +88,108 @@ nav a:hover{
     background-color: var(--primary-color-dark);
     border-radius: 50%;
     transition: .5s ease;
+    z-index: 55;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.y-scroll-snapping{
+    scroll-snap-type: y mandatory !important;
+}
+section{
+    height: calc(100vh - 100px);
+    padding-top: 100px;
+    scroll-snap-align: start; /* Adjust as needed, 'start' or 'end' could be used */
+}
+section#landing {
+    padding-top: 50px !important;
+}
+
+.section-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100%;
+    width: 100%;
+}
+
+.sub-title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#landing .section-grid{
+    grid-template-areas: "text text picture picture" "text text picture picture" "text text picture picture" "text text picture picture";
+    justify-items: center;
+    align-items: center;
+}
+
+#landing-skills{
+    height: 1rem;
+}
+
+.landing-title{
+    grid-area: text;
+    width: 100%;
+    font-size: 2.25rem;
+}
+.landing-img{
+    grid-area: picture;
+    display: block;
+    width: 100%;
+}
+
+.landing-img img{
+    width: 90%;
+    max-height: 500px;
+}
+
+#skills .section-grid{
+    grid-template-areas: "about about about about" "skills skills skills skills" "skills skills skills skills" "skills skills skills skills";
+}
+
+.about{
+    grid-area: about;
+}
+.skills{
+    grid-area: skills;
+}
+
+p.about-content{
+    margin-top: 2.5rem;
+    width: 40dvw;
+}
+
+
+#projects .section-grid{
+    grid-template-areas: "title title title title" "content content content content" "content content content content" "content content content content";
+}
+
+.projects-title{
+    grid-area: title;
+    font-size: 1.5rem;
+}
+
+.projects-content{
+    grid-area: content;
+}
+
+#socials .section-grid{
+    grid-template-areas: "title title title title" "content content content content" "content content content content" "content content content content";
+}
+
+.socials-title{
+    grid-area: title;
+    font-size: 1.5rem;
+}
+
+.socials-content{
+    grid-area: content;
 }
