@@ -9,6 +9,11 @@
         transform: translateX(-50%);
     }
 
+    .landing-img{
+        display: none !important;
+        position: relative;
+    }
+
     .content-about{
         margin-top: 2rem !important;
     }
