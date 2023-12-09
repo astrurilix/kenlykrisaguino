@@ -9,10 +9,6 @@ FULL STACK DEVELOPER
     --white: #e5e5e5;
     --gray: #979797;
 
-    --landing-nav: 15vw;
-    --skills-nav: 30vw;
-    --projects-nav: 73.5vw;
-    --socials-nav: 86.5vw;
 }
 
 a{
@@ -44,7 +40,7 @@ hr{
     display: none;
 }
 
-body {
+body, html {
     background: linear-gradient(#00000080, #00000055), 
     url(../img/background/background.webp);
     background-repeat: repeat;
@@ -92,12 +88,7 @@ nav a:hover{
 }
 
 main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-flow: column nowrap;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    min-height: 100vh;
 }
 
 .y-scroll-snapping{
@@ -162,11 +153,14 @@ section#landing {
     grid-area: skills;
 }
 
-p.about-content{
+.content-about{
     margin-top: 2.5rem;
-    width: 40dvw;
+    display: flex;
+    justify-content: center;
 }
-
+.content-about p{
+    width: 40vw;
+}
 
 #projects .section-grid{
     grid-template-areas: "title title title title" "content content content content" "content content content content" "content content content content";
@@ -175,6 +169,7 @@ p.about-content{
 .projects-title{
     grid-area: title;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .projects-content{

@@ -17,8 +17,10 @@
         text-align: center !important; 
     }
 
-    p.about-content{
+    .content-about{
         margin-top: 1rem !important;
-        width: 80dvw !important;
+    }
+    .content-about p{
+        width: 80vw !important;
     }
 }

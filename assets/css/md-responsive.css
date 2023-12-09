@@ -8,9 +8,11 @@
         left: 50%;
         transform: translateX(-50%);
     }
-    
-    p.about-content{
-        margin-top: 2rem;
-        width: 80dvw !important;
+
+    .content-about{
+        margin-top: 2rem !important;
+    }
+    .content-about p{
+        width: 80vw !important;
     }
 }
