@@ -3,6 +3,21 @@
     #landing .section-grid{
         grid-template-areas: "text text text text" "text text text text" "text text text text" "text text text text"!important;
     }
+
+    .socials-media-cards{
+        margin-left: 5vw !important;
+        flex-direction: column !important;
+        scroll-snap-type: x mandatory !important;
+        width: 100vw !important;
+        max-width: 90vw;
+        overflow-x: scroll;
+    }
+
+    .social-card{
+        scroll-snap-align: center !important;
+        width: 90vw !important;
+        height: 40vh !important;
+    }
     
     .landing-title {
         font-size: 2rem !important;
