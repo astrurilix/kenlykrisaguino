@@ -44,7 +44,7 @@ body, html {
     background: linear-gradient(#00000080, #00000055), 
     url(../img/background/background.webp);
     background-repeat: repeat;
-    min-height: 100vh;
+    min-height: 100dvh;
     background-size: contain;
     scroll-snap-type: y mandatory;
 }
@@ -88,14 +88,14 @@ nav a:hover{
 }
 
 main {
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 .y-scroll-snapping{
     scroll-snap-type: y mandatory !important;
 }
 section{
-    height: calc(100vh - 100px);
+    height: calc(100dvh - 100px);
     padding-top: 100px;
     scroll-snap-align: start; /* Adjust as needed, 'start' or 'end' could be used */
 }
