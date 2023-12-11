@@ -163,6 +163,50 @@ section#landing {
     width: 40vw;
 }
 
+.skills-content{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.skills-main{
+    width: 30dvw;
+    display: flex;
+    gap: 25px;
+}
+
+.skills-main-icon i{
+    font-size: 10rem;
+}
+
+.skills-main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skills-main-title{
+    font-size: 2rem;
+}
+
+.skills-others{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skills-item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 #projects .section-grid{
     grid-template-areas: "title title title title" "content content content content" "content content content content" "content content content content";
 }

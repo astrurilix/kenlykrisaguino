@@ -20,4 +20,20 @@
     .content-about p{
         width: 80vw !important;
     }
+
+    .skills-content{
+        flex-direction: column !important;
+    }
+    
+    .skills-others{
+        flex-direction: row !important;
+    }
+
+    .skills-item-title{
+        display: none;
+    }
+    
+    .skills-main{
+        margin-left: -25dvw;
+    }
 }

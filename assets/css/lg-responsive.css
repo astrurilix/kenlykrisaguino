@@ -1,0 +1,14 @@
+@media (max-width: 1200px) { 
+    .skills-content{
+        flex-direction: column !important;
+    }
+    
+    .skills-others{
+        flex-direction: row !important;
+    }
+
+    .skills-item-title{
+        display: none;
+    }
+    
+}

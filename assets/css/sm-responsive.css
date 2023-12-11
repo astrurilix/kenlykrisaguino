@@ -33,4 +33,8 @@
     .content-about p{
         width: 80vw !important;
     }
+
+    .skills-main{
+        margin-left: -55dvw;
+    }
 }
