@@ -124,10 +124,6 @@ section#landing {
     align-items: center;
 }
 
-#landing-skills{
-    height: 1rem;
-}
-
 .landing-title{
     grid-area: text;
     width: 100%;
@@ -143,72 +139,90 @@ section#landing {
     max-height: 500px;
 }
 
-#skills .section-grid{
-    grid-template-areas: "about about about about" "skills skills skills skills" "skills skills skills skills" "skills skills skills skills";
+#about .section-grid{
+    grid-template-areas: "title title title title" "image image about about" "image image about about" "image image about about";
+    grid-template-rows: 4rem repeat(3, 1fr);
+    align-items: center;
 }
 
-.about{
+.about-title{
+    grid-area: title;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.about-image{
+    grid-area: image;
+    margin-left: auto;
+    margin-right: 20px;
+    height: 500px;
+}
+
+.about-image img{
+    height: 100%;
+}
+
+.about-me{
     grid-area: about;
-}
-.skills{
-    grid-area: skills;
-}
-
-.content-about{
-    margin-top: 2.5rem;
-    display: flex;
-    justify-content: center;
-}
-.content-about p{
-    width: 40vw;
+    padding-inline: 40px;
+    font-size: 1.25rem;
+    max-width: 500px;
 }
 
-.skills-content{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 75%;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+.about-me p{
+    margin-bottom: .5rem;
 }
 
-.skills-main{
-    width: 30dvw;
-    display: flex;
-    gap: 25px;
-}
-
-.skills-main-icon i{
-    font-size: 10rem;
-}
-
-.skills-main-content{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-}
-
-.skills-main-title{
-    font-size: 2rem;
-}
-
-.skills-others{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.skills-item{
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.about-me p span{
+   color: var(--primary-color);
 }
 
 #projects .section-grid{
-    grid-template-areas: "title title title title" "content content content content" "content content content content" "content content content content";
+    grid-template-areas: "title title title title" "skills skills content content" "skills skills content content" "skills skills content content";
+    grid-template-rows: 4rem repeat(3, 1fr);
+    align-items: center;
+}
+
+.skills-content{
+    grid-area: skills;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: 3rem;
+}
+
+#laravel{
+    display: flex;
+    gap: 1rem;
+}
+
+
+#laravel .icon i{
+    font-size: 12rem;
+}
+
+#laravel .information-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.other-skills{
+    display: flex;
+    gap: 10px;
+}
+
+.other-skills > div{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.skill-item .description{
+    font-size: .5rem;
+    font-weight: 700;
 }
 
 .projects-title{
