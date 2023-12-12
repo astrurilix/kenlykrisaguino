@@ -211,7 +211,9 @@ section#landing {
 
 .other-skills{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 .other-skills > div{

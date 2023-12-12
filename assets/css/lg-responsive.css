@@ -11,4 +11,31 @@
         display: none;
     }
     
+    #projects .section-grid{
+        grid-template-areas: "title title title title" "skills skills skills skills" "content content content content" "content content content content" !important;
+    }
+
+    .skills-content{
+        margin-right: auto !important;
+        max-width: 400px !important;
+    }
+
+    #laravel .icon i{
+        font-size: 9rem !important;
+    }
+
+    #laravel .information-title{
+        font-size: 1.5rem !important;
+    }
+
+    #laravel .information-content{
+        font-size: .8rem !important;
+    }
+
+    .other-skills{
+        max-width: 300px !important;
+        
+    }
+    
+    
 }
