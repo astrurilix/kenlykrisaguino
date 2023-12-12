@@ -14,12 +14,15 @@
         position: relative;
     }
 
-    .content-about{
-        margin-top: 2rem !important;
+    #about .section-grid{
+        grid-template-areas: "title title title title" "about about about about" "about about about about" "about about about about" !important;
     }
-    .content-about p{
-        width: 80vw !important;
+
+    .about-image{
+        display: none !important;
     }
+    
+    
 
     .skills-content{
         flex-direction: column !important;

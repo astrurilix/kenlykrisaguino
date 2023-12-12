@@ -37,5 +37,9 @@
         
     }
     
-    
+    .projects-content{
+        max-width: 90vw !important;
+        border-left: none !important;
+        border-right: none !important;
+    }    
 }

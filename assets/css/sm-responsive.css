@@ -13,6 +13,11 @@
         overflow-x: scroll;
     }
 
+    #laravel{
+        margin-left: 1.5rem;
+        margin-right: auto;
+    }
+
     .social-card{
         scroll-snap-align: center !important;
         width: 90vw !important;
