@@ -14,10 +14,26 @@
     }
 
     #laravel{
-        margin-left: 1.5rem;
+        margin-left: 1.5rem !important;
         margin-right: auto;
     }
 
+    #laravel .icon i{
+        font-size: 7rem !important;
+    }
+
+    #laravel .information-title{
+        font-size: 1rem !important;
+    }
+
+    #laravel .information-content{
+        font-size: .75rem !important;
+    }
+
+    .skill-item .description{
+        font-size: .25rem;
+    }
+    
     .social-card{
         scroll-snap-align: center !important;
         width: 90vw !important;
