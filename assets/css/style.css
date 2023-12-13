@@ -8,7 +8,7 @@ FULL STACK DEVELOPER
     --primary-color-dark: hsl(46, 100%, 45%);
     --white: #e5e5e5;
     --gray: #979797;
-
+    --dark: #333;
 }
 
 a{
@@ -287,6 +287,8 @@ section#landing {
 }
 .project-card-date .date-content{
     background-color: var(--primary-color-dark);
+    color: var(--dark);
+    font-weight: 600;
     padding: 2px 10px;
     border-radius: 10px;
 }
