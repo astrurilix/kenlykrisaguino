@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Define the skills array
-    var skillsArray = ["FULLSTACK WEB DEVELOPER", "BACK-END WEB DEVELOPER", "LARAVEL DEVELOPER"];
+    var skillsArray = ["FULLSTACK WEB DEVELOPER", "BACK-END WEB DEVELOPER", "LARAVEL DEVELOPER", "GOLANG API DEVELOPER"];
     var currentIndex = 0;
 
     // Function to update landing skills
